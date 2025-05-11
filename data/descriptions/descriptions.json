@@ -1,0 +1,24 @@
+{
+  "descriptions": [
+    {
+      "image_id": "image1.jpg",
+      "description": "A beautiful sunset over the mountains."
+    },
+    {
+      "image_id": "image2.jpg",
+      "description": "A cat sitting on a windowsill looking outside."
+    },
+    {
+      "image_id": "image3.jpg",
+      "description": "A bustling city street filled with people and cars."
+    },
+    {
+      "image_id": "image4.jpg",
+      "description": "A serene beach with white sand and clear blue water."
+    },
+    {
+      "image_id": "image5.jpg",
+      "description": "A close-up of a flower in full bloom."
+    }
+  ]
+}
