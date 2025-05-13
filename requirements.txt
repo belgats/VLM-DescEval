@@ -4,3 +4,5 @@ transformers
 Pillow
 pytest
 jsonschema
+git+https://github.com/jmhessel/clipscore.git
+git+https://github.com/linzhiqiu/t2v_metrics.git

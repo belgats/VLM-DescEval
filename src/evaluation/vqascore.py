@@ -1,3 +1,5 @@
+import t2v_metrics
+
 def calculate_vqa_score(image, description):
     """
     Calculate the VQA score for a given image and its description.
@@ -28,4 +30,19 @@ def evaluate_vqa_scores(images, descriptions):
     for image, description in zip(images, descriptions):
         score = calculate_vqa_score(image, description)
         scores.append(score)
+    return scores
+
+def compute_vqascore(images, descriptions):
+    """
+    Compute VQAScore for a set of images and their corresponding descriptions.
+
+    Parameters:
+    - images: A list of image file paths.
+    - descriptions: A list of text descriptions corresponding to the images.
+
+    Returns:
+    - scores: A list of VQAScores for each image-description pair.
+    """
+    vqa_model = t2v_metrics.VQAScore(model='clip-flant5-xxl')
+    scores = vqa_model(images=images, texts=descriptions)
     return scores
